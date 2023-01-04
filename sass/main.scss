@@ -1,39 +1,39 @@
 // Defaults
-@import './base/basic-reset';
-@import './base/defaults';
+@import "./base/basic-reset";
+@import "./base/defaults";
 
 // Utilities and variables
-@import './utils/functions';
-@import './utils/variables';
-@import './utils/utilities';
-@import './utils/mixins';
-@import './utils/placeholders';
-@import './utils/animations';
-@import './utils/animate'; // let this one remain a separate file
+@import "./utils/functions";
+@import "./utils/variables";
+@import "./utils/utilities";
+@import "./utils/mixins";
+@import "./utils/placeholders";
+@import "./utils/animations";
+@import "./utils/animate"; // let this one remain a separate file
 
 // Common styles & building blocks
-@import './layout/common';
-@import './components/buttons';
-@import './components/headings';
+@import "./layout/common";
+@import "./components/buttons";
+@import "./components/headings";
 
 // Sections
-@import './layout/sections/header';
-@import './layout/sections/mobile-menu';
+// @import './layout/sections/header';
+// @import './layout/sections/mobile-menu';
 
-@import './layout/sections/hero';
-@import './layout/sections/products';
-@import './layout/sections/about';
-@import './layout/sections/benefits';
-@import './layout/sections/gallery';
-@import './layout/sections/feedback';
-@import './layout/sections/contacts';
+// @import './layout/sections/hero';
+// @import './layout/sections/products';
+// @import './layout/sections/about';
+// @import './layout/sections/benefits';
+// @import './layout/sections/gallery';
+// @import './layout/sections/feedback';
+// @import './layout/sections/contacts';
 
-@import './layout/sections/footer';
+// @import './layout/sections/footer';
 
 // Modal windows
-@import './layout/modals/modal';
-@import './layout/modals/modal-ingredients';
-@import './layout/modals/modal-with-video';
-@import './layout/modals/modal-buynow';
-@import './layout/modals/modal-franchise';
-@import './layout/modals/modal-locations';
+@import "./layout/modals/modal";
+@import "./layout/modals/modal-ingredients";
+@import "./layout/modals/modal-with-video";
+@import "./layout/modals/modal-buynow";
+@import "./layout/modals/modal-franchise";
+@import "./layout/modals/modal-locations";
