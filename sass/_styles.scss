@@ -1,0 +1,124 @@
+/*  Common  */
+
+:root {
+	font-family: $primary-font;
+	font-size: $primary-font-size;
+
+	scroll-padding-top: 80px; // height of sticky header
+	// courtesy of https://css-tricks.com/fixed-headers-on-page-links-and-overlapping-content-oh-my/
+}
+
+body {
+	letter-spacing: 0.04em;
+	// color: $text-dark;
+
+	// $gradient-color, $folder, $filename, $extension: webp
+	@include bg-with-overlay(rgba(#eee, 0.5), bg, bg);
+	background-attachment: fixed;
+
+	&.modal-open {
+		overflow: hidden;
+	}
+}
+
+.container {
+	padding-left: $container-padding;
+	padding-right: $container-padding;
+
+	margin-left: auto;
+	margin-right: auto;
+
+	@media screen and (min-width: $mobile) {
+		width: $mobile;
+	}
+	@media screen and (min-width: $tablet) {
+		width: $tablet;
+	}
+	@media screen and (min-width: $desktop) {
+		width: $desktop;
+	}
+}
+
+.section {
+	padding: $section-padding 0;
+
+	&.dark-text,
+	&--dark-text {
+		// color: $text-dark;
+	}
+
+	&.light-text,
+	&--light-text {
+		// color: $text-light;
+	}
+}
+
+/* Links */
+
+.link,
+%link {
+	font-weight: 700;
+	font-size: inherit;
+	color: currentColor;
+
+	@include transition(color);
+
+	&:hover,
+	&:focus {
+		color: $accent;
+	}
+}
+
+/* SVG icons */
+
+.icon {
+	fill: currentColor;
+
+	@include transition(fill);
+
+	// &:hover,
+	// &:focus {
+	//   animation: 700ms ease-out forwards pulsing;
+	// }
+}
+
+/* Headings */
+
+.section-heading {
+	// font-family: $secondary-font;
+	font-weight: 400;
+
+	text-transform: uppercase;
+	text-align: center;
+
+	@include fz-lh(30, 38);
+	letter-spacing: 0.04em;
+
+	@media screen and (min-width: $tablet) {
+		@include fz-lh(34, 43);
+		letter-spacing: 0.06em;
+	}
+
+	@media screen and (min-width: $desktop) {
+		@include fz-lh(36, 45);
+	}
+}
+
+.sup-heading {
+	font-weight: 800;
+	text-transform: uppercase;
+
+	margin-bottom: 12px;
+
+	@include fz-lh(18, 22);
+
+	@media screen and (min-width: $tablet) {
+		@include fz-lh(22, 27);
+	}
+
+	@media screen and (min-width: $desktop) {
+		@include fz-lh(30, 37);
+	}
+}
+
+//
