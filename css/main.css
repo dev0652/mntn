@@ -136,6 +136,17 @@ body {
 
 .section {
   padding: 200px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section-text-block {
+  padding: 140px 114px 140px 150px;
+}
+
+.section-image-block {
+  width: 100%;
 }
 
 /* Links */
