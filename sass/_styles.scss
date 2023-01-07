@@ -1,14 +1,13 @@
 /*  Common  */
 
-:root {
+body {
 	font-family: $primary-font;
 	font-size: $primary-font-size;
 
-	scroll-padding-top: 80px; // height of sticky header
+	// Adjust for fixed/sticky header height when jumping to page sections:
+	scroll-padding-top: 80px;
 	// courtesy of https://css-tricks.com/fixed-headers-on-page-links-and-overlapping-content-oh-my/
-}
 
-body {
 	color: $contrast;
 	background-color: $bg;
 
@@ -48,14 +47,11 @@ body {
 	padding: $section-padding 0;
 
 	display: flex;
-}
+	column-gap: 114px;
 
-.section-text-block {
-	padding: 140px 114px 140px 150px;
-}
-
-.section-image-block {
-	width: 100%;
+	&:nth-of-type(even) {
+		flex-direction: row-reverse;
+	}
 }
 
 /* Links */
@@ -91,7 +87,8 @@ body {
 
 .section-heading {
 	font-family: $heading-font;
-	font-weight: 600;
+	// font-weight: 600;
+	font-weight: 375; // per https://www.cdnfonts.com/chronicle-display.font
 
 	@include fz-lh(64, 77);
 
@@ -144,4 +141,41 @@ body {
 	}
 }
 
-//
+.section-text-block {
+	position: relative;
+	padding: 140px 0 140px 150px;
+
+	display: flex;
+	flex-direction: column;
+	row-gap: 27px;
+}
+
+.section-number {
+	position: absolute;
+	top: 38px;
+	left: 0;
+
+	font-weight: 700;
+	@include fz-lh(240, 240);
+	color: rgba($contrast, 0.1);
+}
+
+.section-image-block {
+	// min-width: 100%;
+	min-width: 566px;
+}
+
+.section-image {
+	display: block;
+}
+
+.text-block-link {
+	color: $accent;
+	display: flex;
+	column-gap: 16px;
+
+	.read-more-arrow {
+		fill: currentColor;
+		transform: rotate(-90deg);
+	}
+}
