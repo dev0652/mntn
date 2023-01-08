@@ -2,7 +2,9 @@
 
 body {
 	font-family: $primary-font;
+	font-weight: 500;
 	font-size: $primary-font-size;
+	line-height: calc(32 / 18);
 
 	// Adjust for fixed/sticky header height when jumping to page sections:
 	scroll-padding-top: 80px;
@@ -43,9 +45,15 @@ body {
 	}
 }
 
-.section {
-	padding: $section-padding 0;
+.page-content-wrapper {
+	display: flex;
+	flex-direction: column;
+	row-gap: 200px;
 
+	margin-bottom: 200px;
+}
+
+.section {
 	display: flex;
 	column-gap: 114px;
 
@@ -68,6 +76,18 @@ body {
 	&:focus {
 		color: $accent;
 	}
+}
+
+// Logo
+
+.logo {
+	font-family: $heading-font;
+	// font-weight: 600;
+	font-weight: 375; // per https://www.cdnfonts.com/chronicle-display.font
+
+	@include fz-lh(32, 38);
+	letter-spacing: 0.01em;
+	text-transform: capitalize;
 }
 
 /* SVG icons */
@@ -141,6 +161,54 @@ body {
 	}
 }
 
+// Header
+
+.header {
+	.container {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	background-color: transparent;
+
+	padding-top: 64px;
+	padding-bottom: 64px;
+}
+
+.header-nav-list {
+	display: flex;
+	column-gap: 40px;
+}
+
+.account-icon {
+	@extend .icon;
+}
+
+.account-link {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+// Hero
+
+.hero {
+	padding-top: 134px;
+}
+
+.slider-controls-list {
+	display: flex;
+	flex-direction: column;
+}
+
+.slider-controls-item {
+	&.current {
+		border-right: 1px solid currentColor;
+	}
+}
+
+// Sections
+
 .section-text-block {
 	position: relative;
 	padding: 140px 0 140px 150px;
@@ -148,6 +216,10 @@ body {
 	display: flex;
 	flex-direction: column;
 	row-gap: 27px;
+}
+
+.text-block-description {
+	font-weight: 700;
 }
 
 .section-number {
@@ -178,4 +250,53 @@ body {
 		fill: currentColor;
 		transform: rotate(-90deg);
 	}
+}
+
+.footer {
+	margin-bottom: 120px;
+
+	.container {
+		display: flex;
+	}
+}
+
+.footer-left-col {
+	display: flex;
+	flex-direction: column;
+}
+
+.footer-logo {
+	margin-bottom: 24px;
+}
+
+.footer-slogan {
+	max-width: 310px;
+}
+
+.footer-copyright {
+	color: rgba($contrast, 0.5);
+	margin-top: auto;
+}
+
+// Footer - right part (nav list)
+
+.footer-right-col {
+	display: flex;
+	justify-content: space-between;
+
+	min-width: 566px;
+	margin-left: auto;
+}
+
+.footer-list-title {
+	font-weight: 700;
+	@include fz-lh(24, 32);
+
+	color: $accent;
+
+	margin-bottom: 20px;
+}
+
+.footer-list-item:not(:last-child) {
+	margin-bottom: 16px;
 }

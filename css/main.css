@@ -97,7 +97,9 @@ svg {
 /*  Common  */
 body {
   font-family: "Gilroy-Bold", sans-serif;
+  font-weight: 500;
   font-size: 1.125rem;
+  line-height: 1.7777777778;
   scroll-padding-top: 80px;
   color: #fff;
   background-color: #0b1d26;
@@ -131,8 +133,19 @@ body {
   }
 }
 
+.page-content-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 200px;
+  margin-bottom: 200px;
+}
+
 .section {
-  padding: 200px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -165,8 +178,17 @@ body {
   color: #fbd784;
 }
 
+.logo {
+  font-family: "Chronicle Display", sans-serif;
+  font-weight: 375;
+  font-size: 32px;
+  line-height: 1.1875;
+  letter-spacing: 0.01em;
+  text-transform: capitalize;
+}
+
 /* SVG icons */
-.icon {
+.icon, .account-icon {
   fill: currentColor;
   -webkit-transition-property: fill;
   transition-property: fill;
@@ -215,6 +237,57 @@ body {
   margin-right: 24px;
 }
 
+.header {
+  background-color: transparent;
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+.header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header-nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 40px;
+     -moz-column-gap: 40px;
+          column-gap: 40px;
+}
+
+.account-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+}
+
+.hero {
+  padding-top: 134px;
+}
+
+.slider-controls-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.slider-controls-item.current {
+  border-right: 1px solid currentColor;
+}
+
 .section-text-block {
   position: relative;
   padding: 140px 0 140px 150px;
@@ -226,6 +299,10 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   row-gap: 27px;
+}
+
+.text-block-description {
+  font-weight: 700;
 }
 
 .section-number {
@@ -259,4 +336,59 @@ body {
   fill: currentColor;
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
+}
+
+.footer {
+  margin-bottom: 120px;
+}
+.footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer-left-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer-logo {
+  margin-bottom: 24px;
+}
+
+.footer-slogan {
+  max-width: 310px;
+}
+
+.footer-copyright {
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: auto;
+}
+
+.footer-right-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-width: 566px;
+  margin-left: auto;
+}
+
+.footer-list-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.3333333333;
+  color: #fbd784;
+  margin-bottom: 20px;
+}
+
+.footer-list-item:not(:last-child) {
+  margin-bottom: 16px;
 }/*# sourceMappingURL=main.css.map */

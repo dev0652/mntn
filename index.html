@@ -28,21 +28,30 @@
 		<div class="container">
 
 			<!-- Logo -->
-			<div class="logo">MNTN</div>
+			<div class="logo">
+				<a href="./index.html">MNTN</a>
+			</div>
 
 			<!-- Navigation -->
-			<nav aria-label="Navigation menu">
+			<nav class="header-nav" aria-label="Navigation menu">
 
-				<ul>
+				<ul class="header-nav-list">
 					<li><a href="#">Equipment</a></li>
 					<li><a href="#">About Us</a></li>
 					<li><a href="#">Blog</a></li>
 				</ul>
 			</nav>
 
-			<div class="account">
-				<a href="" class="account-link">Account</a>
-			</div>
+
+			<a href="#" class="account-link">
+
+				<svg class="account-icon" width="24" height="24">
+					<use href="./images/svg/symbol-defs.svg#icon-account"></use>
+				</svg>
+
+				Account
+			</a>
+
 
 		</div>
 	</header>
@@ -62,14 +71,16 @@
 
 				<p class="scroll-hint">scroll down</p>
 
-				<nav aria-label="Table of contents" class="table-of-contents">
-					<ul>
-						<li><a href="" aria-current="page">Start</a></li>
-						<li><a href="">01</a></li>
-						<li><a href="">02</a></li>
-						<li><a href="">03</a></li>
+				<div class="slider" aria-label="slider">
+
+					<ul class="slider-controls-list">
+						<li class="slider-controls-item current"><a href="#">Start</a></li>
+						<li class="slider-controls-item"><a href="#">01</a></li>
+						<li class="slider-controls-item"><a href="#">02</a></li>
+						<li class="slider-controls-item"><a href="#">03</a></li>
 					</ul>
-				</nav>
+
+				</div>
 
 				<div class="follow-us">
 					<p class="follow-us-text">Follow us</p>
@@ -93,180 +104,178 @@
 		</section>
 
 		<!-- Sections -->
-		<div class="page-content-wrapper">
-			<div class="container">
+		<div class="page-content-wrapper container">
 
-				<!-- Section 01 -->
-				<section class="section" id="your-hiker-level">
+			<!-- Section 01 -->
+			<section class="section" id="your-hiker-level">
 
-					<!-- Section text -->
-					<div class="section-text-block">
+				<!-- Section text -->
+				<div class="section-text-block">
 
-						<!-- Section number -->
-						<p class="section-number">01</p>
+					<!-- Section number -->
+					<p class="section-number">01</p>
 
-						<!-- Super heading -->
-						<p class="super-heading">Get started</p>
+					<!-- Super heading -->
+					<p class="super-heading">Get started</p>
 
-						<!-- Section heading -->
-						<h2 class="section-heading">What level of hiker are you?</h2>
+					<!-- Section heading -->
+					<h2 class="section-heading">What level of hiker are you?</h2>
 
-						<!-- Section description -->
-						<p class="text-block-description">
-							Determining what level of hiker you are can be an important tool when planning future hikes. This hiking
-							level guide will help you plan hikes according to different hike ratings set by various websites like All
-							Trails and Modern Hiker.
-							What type of hiker are you – novice, moderate, advanced moderate, expert, or expert backpacker?
-						</p>
+					<!-- Section description -->
+					<p class="text-block-description">
+						Determining what level of hiker you are can be an important tool when planning future hikes. This hiking
+						level guide will help you plan hikes according to different hike ratings set by various websites like All
+						Trails and Modern Hiker.
+						What type of hiker are you – novice, moderate, advanced moderate, expert, or expert backpacker?
+					</p>
 
-						<!-- Read More link -->
-						<a href="#" class="text-block-link">read more
+					<!-- Read More link -->
+					<a href="#" class="text-block-link">read more
 
-							<svg class="read-more-arrow" width="16" height="24">
-								<use href="./images/svg/symbol-defs.svg#icon-arrow-24px"></use>
-							</svg>
+						<svg class="read-more-arrow" width="16" height="24">
+							<use href="./images/svg/symbol-defs.svg#icon-arrow-24px"></use>
+						</svg>
 
-						</a>
+					</a>
 
-					</div>
+				</div>
 
-					<!-- Section image -->
-					<div class="section-image-block">
+				<!-- Section image -->
+				<div class="section-image-block">
 
-						<picture class="section-image">
-							<!-- Desktop -->
-							<!-- <source media="(min-width: 1920px)" srcset="
+					<picture class="section-image">
+						<!-- Desktop -->
+						<!-- <source media="(min-width: 1920px)" srcset="
 								            ./images/hero/webp/desktop/img-1_desk.webp    1x,
 								            ./images/hero/webp/desktop/img-1_desk@2x.webp 2x
 								          " type="image/webp" /> -->
-							<source media="(min-width: 1920px)" srcset="
+						<source media="(min-width: 1920px)" srcset="
 								            ./images/jpeg/01.jpg    1x,
 								            ./images/jpeg/01@2x.jpg 2x
 								          " type="image/jpeg" />
 
-							<img src="./images/jpeg/01.jpg"
-								alt="A young female hiker with a backpack walking on a trail high in the mountains" width="566"
-								height="720" loading="lazy" />
-						</picture>
-					</div>
+						<img src="./images/jpeg/01.jpg"
+							alt="A young female hiker with a backpack walking on a trail high in the mountains" width="566"
+							height="720" loading="lazy" />
+					</picture>
+				</div>
 
-				</section>
+			</section>
 
-				<!-- Section 02 -->
-				<section class="section" id="picking-right-gear">
+			<!-- Section 02 -->
+			<section class="section" id="picking-right-gear">
 
-					<!-- Section text -->
-					<div class="section-text-block">
+				<!-- Section text -->
+				<div class="section-text-block">
 
-						<!-- Section number -->
-						<p class="section-number">02</p>
+					<!-- Section number -->
+					<p class="section-number">02</p>
 
-						<!-- Super heading -->
-						<p class="super-heading">Hiking essentials</p>
+					<!-- Super heading -->
+					<p class="super-heading">Hiking essentials</p>
 
-						<!-- Section heading -->
-						<h2 class="section-heading">Picking the right Hiking Gear!</h2>
+					<!-- Section heading -->
+					<h2 class="section-heading">Picking the right Hiking Gear!</h2>
 
-						<!-- Section description -->
-						<p class="text-block-description">
-							The nice thing about beginning hiking is that you don’t really need any special gear, you can probably get
-							away with
-							things you already have.
-							Let’s start with clothing. A typical mistake hiking beginners make is wearing jeans and regular clothes,
-							which will get
-							heavy and chafe wif they get sweaty or wet.
-						</p>
+					<!-- Section description -->
+					<p class="text-block-description">
+						The nice thing about beginning hiking is that you don’t really need any special gear, you can probably get
+						away with
+						things you already have.
+						Let’s start with clothing. A typical mistake hiking beginners make is wearing jeans and regular clothes,
+						which will get
+						heavy and chafe wif they get sweaty or wet.
+					</p>
 
-						<!-- Read More link -->
-						<a href="#" class="text-block-link">read more
+					<!-- Read More link -->
+					<a href="#" class="text-block-link">read more
 
-							<svg class="read-more-arrow" width="16" height="24">
-								<use href="./images/svg/symbol-defs.svg#icon-arrow-24px"></use>
-							</svg>
+						<svg class="read-more-arrow" width="16" height="24">
+							<use href="./images/svg/symbol-defs.svg#icon-arrow-24px"></use>
+						</svg>
 
-						</a>
+					</a>
 
-					</div>
+				</div>
 
-					<!-- Section image -->
-					<div class="section-image-block">
+				<!-- Section image -->
+				<div class="section-image-block">
 
-						<picture class="section-image">
-							<!-- Desktop -->
-							<!-- <source media="(min-width: 1920px)" srcset="
+					<picture class="section-image">
+						<!-- Desktop -->
+						<!-- <source media="(min-width: 1920px)" srcset="
 																				            ./images/hero/webp/desktop/img-1_desk.webp    1x,
 																				            ./images/hero/webp/desktop/img-1_desk@2x.webp 2x
 																				          " type="image/webp" /> -->
-							<source media="(min-width: 1920px)" srcset="
+						<source media="(min-width: 1920px)" srcset="
 																				            ./images/jpeg/02.jpg    1x,
 																				            ./images/jpeg/02@2x.jpg 2x
 																				          " type="image/jpeg" />
 
-							<img src="./images/jpeg/02.jpg"
-								alt="A male hiker with a backpack stands on a rock overlooking a neighboring mountain ridge" width="566"
-								height="720" loading="lazy" />
-						</picture>
-					</div>
+						<img src="./images/jpeg/02.jpg"
+							alt="A male hiker with a backpack stands on a rock overlooking a neighboring mountain ridge" width="566"
+							height="720" loading="lazy" />
+					</picture>
+				</div>
 
-				</section>
+			</section>
 
-				<!-- Section 03 -->
-				<section class="section" id="map-and-timing">
+			<!-- Section 03 -->
+			<section class="section" id="map-and-timing">
 
-					<!-- Section text -->
-					<div class="section-text-block">
+				<!-- Section text -->
+				<div class="section-text-block">
 
-						<!-- Section number -->
-						<p class="section-number">03</p>
+					<!-- Section number -->
+					<p class="section-number">03</p>
 
-						<!-- Super heading -->
-						<p class="super-heading">Where you go is the key</p>
+					<!-- Super heading -->
+					<p class="super-heading">Where you go is the key</p>
 
-						<!-- Section heading -->
-						<h2 class="section-heading">Understand Your Map & Timing</h2>
+					<!-- Section heading -->
+					<h2 class="section-heading">Understand Your Map & Timing</h2>
 
-						<!-- Section description -->
-						<p class="text-block-description">
-							To start, print out the hiking guide and map. If it’s raining, throw them in a Zip-Lock bag. Read over the
-							guide, study
-							the map, and have a good idea of what to expect. I like to know what my next landmark is as I hike. For
-							example, I’ll
-							read the guide and know that say, in a mile, I make a right turn at the junction.
-						</p>
+					<!-- Section description -->
+					<p class="text-block-description">
+						To start, print out the hiking guide and map. If it’s raining, throw them in a Zip-Lock bag. Read over the
+						guide, study
+						the map, and have a good idea of what to expect. I like to know what my next landmark is as I hike. For
+						example, I’ll
+						read the guide and know that say, in a mile, I make a right turn at the junction.
+					</p>
 
-						<!-- Read More link -->
-						<a href="#" class="text-block-link">read more
+					<!-- Read More link -->
+					<a href="#" class="text-block-link">read more
 
-							<svg class="read-more-arrow" width="16" height="24">
-								<use href="./images/svg/symbol-defs.svg#icon-arrow-24px"></use>
-							</svg>
+						<svg class="read-more-arrow" width="16" height="24">
+							<use href="./images/svg/symbol-defs.svg#icon-arrow-24px"></use>
+						</svg>
 
-						</a>
-					</div>
+					</a>
+				</div>
 
-					<!-- Section image -->
-					<div class="section-image-block">
+				<!-- Section image -->
+				<div class="section-image-block">
 
-						<picture class="section-image">
-							<!-- Desktop -->
-							<!-- <source media="(min-width: 1920px)" srcset="
+					<picture class="section-image">
+						<!-- Desktop -->
+						<!-- <source media="(min-width: 1920px)" srcset="
 																										            ./images/hero/webp/desktop/img-1_desk.webp    1x,
 																										            ./images/hero/webp/desktop/img-1_desk@2x.webp 2x
 																										          " type="image/webp" /> -->
-							<source media="(min-width: 1920px)" srcset="
+						<source media="(min-width: 1920px)" srcset="
 																										            ./images/jpeg/03.jpg    1x,
 																										            ./images/jpeg/03@2x.jpg 2x
 																										          " type="image/jpeg" />
 
-							<img src="./images/jpeg/03.jpg"
-								alt="A first-person-view of man's hand holding a compass against a backdrop of a mountain ridge"
-								width="566" height="720" loading="lazy" />
-						</picture>
-					</div>
+						<img src="./images/jpeg/03.jpg"
+							alt="A first-person-view of man's hand holding a compass against a backdrop of a mountain ridge"
+							width="566" height="720" loading="lazy" />
+					</picture>
+				</div>
 
-				</section>
+			</section>
 
-			</div>
 		</div>
 
 	</main>
@@ -279,7 +288,9 @@
 			<div class="footer-left-col">
 
 				<!-- Logo -->
-				<div class="logo">MNTN</div>
+				<div class="logo footer-logo">
+					<a href="./index.html">MNTN</a>
+				</div>
 
 				<!-- Footer slogan -->
 				<p class="footer-slogan">
@@ -294,32 +305,66 @@
 			</div>
 
 			<!-- Right column (a list with two nested lists) -->
-			<ul class="footer-nav-list">
+			<div class="footer-right-col">
 
 				<!-- More on the blog -->
-				<li class="nested-list-heading">More on the blog
-					<ul class="nested-list">
-						<li class="nested-list-item">About MNTN</li>
-						<li class="nested-list-item">Contributors & Writers</li>
-						<li class="nested-list-item">Write For Us</li>
-						<li class="nested-list-item">Contact Us</li>
-						<li class="nested-list-item">Privacy Policy</li>
+				<div class="footer-nav">
+
+					<!-- Menu title -->
+					<p class="footer-list-title">More on the blog</p>
+
+					<!-- Menu items -->
+					<ul class="footer-list">
+
+						<li class="footer-list-item">
+							<a href="#" class="footer-list-link">About MNTN</a>
+						</li>
+
+						<li class="footer-list-item">
+							<a href="#" class="footer-list-link">Contributors & Writers</a>
+						</li>
+
+						<li class="footer-list-item">
+							<a href="#" class="footer-list-link">Write For Us</a>
+						</li>
+
+						<li class="footer-list-item">
+							<a href="#" class="footer-list-link">Contact Us</a>
+						</li>
+
+						<li class="footer-list-item">
+							<a href="#" class="footer-list-link">Privacy Policy</a>
+						</li>
+
 					</ul>
-				</li>
+
+				</div>
 
 				<!-- More on MNTN -->
-				<li class="nested-list-heading">More on MNTN
+				<div class="footer-nav">
 
-					<ul class="nested-list">
-						<li class="nested-list-item">The Team</li>
-						<li class="nested-list-item">Jobs</li>
-						<li class="nested-list-item">Press </li>
+					<!-- Menu title -->
+					<p class="footer-list-title">More on MNTN</p>
+
+					<!-- Menu items -->
+					<ul class="footer-list">
+
+						<li class="footer-list-item">
+							<a href="#" class="footer-list-link">The Team</a>
+						</li>
+
+						<li class="footer-list-item">
+							<a href="#" class="footer-list-link">Jobs</a>
+						</li>
+
+						<li class="footer-list-item">
+							<a href="#" class="footer-list-link">Press</a>
+						</li>
+
 					</ul>
 
-				</li>
-			</ul>
-
-			<ul class=""></ul>
+				</div>
+			</div>
 
 		</div>
 	</footer>
